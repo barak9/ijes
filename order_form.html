@@ -44,6 +44,7 @@ ul {
   padding: 0;
   list-style: none;
 }
+
 h4{
 color:#ffb600;
 }
@@ -82,6 +83,59 @@ background-color:#444441;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 }
+#order_now{
+	  padding-left: 76px;
+	  width:100%;
+	 
+	  
+	}
+#order_now td{
+	font-size: 15px;
+  font-family: OpenSans-Bold;
+  margin-top: 7px;
+  line-height: 22px;
+  /* margin-top: 18px; */
+  color: #333333;
+	}
+	#order_now tr:nth-child(even) td:nth-child(odd){
+  background-color: #F7F7F7;
+  
+}
+#order_now tr:last-child td:nth-child(odd){
+  background-color: #FFF;
+  
+}
+#order_now td input{	
+	  font-family: Tahoma;
+  font-size: 15px;
+  line-height: 0px;
+  color: #143544;
+ margin:2px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  font-weight: normal;
+  width:277px;
+}
+#order_now td textarea{	
+	  font-family: Tahoma;
+  font-size: 15px;
+  line-height: 18px;
+   margin:2px;
+  color: #143544;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  font-weight: normal;
+  width:277px;
+}
+
+.btn{height:50px;
+width:100px;
+margin-top:20px;
+margin-left:170px;}
 
 </style>
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -281,60 +335,156 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 <!-- About the journal -->
 
-<div class="container" style="text-align:justify; text-justify:inter-word;">
-    <h2><center>PLAGIARISM POLICY</center></h2>
-	<hr>
-    <p>
-	Journals to check a research work against millions of other published scholarly articles, books, conference papers, dissertations, 
-	other academic content, and billions of web pages to ensure its originality. A service that helps editors to verify the originality of papers. 
-	Crossref Similarity Check powered by iThenticate is an initiative between iThenticate and Crossref®, a not-for-profit membership organization for
-	scholarly publishing working to make content easy to find, cite, link, and assess. With thousands of journals sharing published works with the 
-	iThenticate database.	
-	</p>
-	<div>
-	<img src="images/crossref_logo.png"/>
-	</div>
-	<h4>About CrossRef</h4>
+<div class="container jumbotron">
+    <div class="order-form">
+	<form method="post">
 	
-	<p>
-	CrossRef is a not-for-profit membership association of publishers. Since its founding in 2000, CrossRef has provided reference linking services 
-	for over 62 million scholarly content items, including journal articles, books and book chapters, conference proceedings, reference entries, technical 
-	reports, standards, and data sets.
-    <pre>Link: <a href="http://www.crossref.org">http://www.crossref.org</a></pre>
-    </p>
+	<p style="font-size:20px !important;color:#C30;"><b>Please fill the form below :</b></p>
 	
-	<div>
-	<img src="images/ithenticate1.png"/>
-	</div>
+	<table border="0" cellspacing="5" cellpadding="30"  id="order_now">
 	
-	<h4>About iThenticate</h4>
-	<p>
-	iThenticate is the leading provider of professional plagiarism detection and prevention technology used worldwide by scholarly publishers and research 
-	institutions to ensure the originality of written work before publication. Its database of over 60 billion web pages and 155 million content items, including 
-	49 million works from more than 600 scholarly publisher participants of Crossref Similarity Check powered by iThenticate software.
-    <pre>Link: <a href="http://www.ithenticate.com">http://www.crossref.org</a></pre>   
 	
-	</p>
-	
-	<h4>CHECK PLAGIARISM RATING - OVERALL</h4>
-	<p>
-	
-    <b>1. Similarity Index - PLAGIARISM RATING 5% - 10%:</b> Low risk about the document contains any plagiarised material.</br>
+		
+  <tr>
+    <td> <b>I/We would like to 
+	order the Book(s) / Journal(s) marked above (or mentioned below)</b><font color="#ff0000">*</font>:</td>
+   
+    <td><textarea name="like_to_order" required ></textarea></td>
+  </tr>
 
-    <b>2. Similarity Index - PLAGIARISM RATING 11% - 25%: </b>Medium risk about the document contains any plagiarised material.</br>
-
-    <b>3. Similarity Index - PLAGIARISM RATING 25%+:</b> High risk about the document contains plagiarised material. 
-	</p>
+  <tr>
+    <td>
+      <b>Please send the Book(s)/Journal(s) by </b><font color="#ff0000">*</font>
+    </td>
+     <td><textarea name="send_book" required></textarea></td>
+  </tr>
+  
+  <tr>
+    <td><b>Please invoice and send the Book(s)/Journal(s) to</b><font color="#ff0000">*</font>: </td>
+        <td><textarea name="invoice_n_book" required></textarea></td>
+  </tr>
+  
+  <tr>
+    <td><b>Name</b><font color="#ff0000">*</font>: </td>
+        <td><input type="text" name="name" required/></td>
+  </tr>
+  
+  <tr>
+    <td><b>Address</b><font color="#ff0000">*</font>:</td>
+        <td><textarea name="address" required></textarea></td>
+  </tr>
+  
+  <tr>
+    <td> <b>Postal Code/City<font color="#ff0000">*</font>:</td>
+        <td><input type="text" name="city" required/></td>
+  </tr>
+  
+  <tr>
+    <td> <b>Country</b><font color="#ff0000">*</font>:</td>
+    	  <td><input type="text" name="counrty" required/></td>
+  </tr>
+  
+  <tr>
+    <td><b>Designation</b><font color="#ff0000">*</font>:</td>    
+	    <td><input type="text" name="designation" required/></td>
+  </tr>
+  
+  <tr>
+    <td><b>E-mail Address</b><font color="#ff0000">*</font>:</td>   
+    <td><input type="email" name="email" id="email" required/><div id="status"></div></td>
+  </tr>
+  
+  <tr>
+    <td><b>Date/Sign up<font color="#ff0000">*</font>:</td>    
+    <td><input type="text" name="date" required/></td>
+  </tr>
+  
+  <tr>
+    <td><b>Total amount (in words) (in figures)</b><font color="#ff0000">*</font>:</td>    
+    <td><input type="text" name="amount_words" onkeypress="return onlyAlphabets(event,this);" required/>(in words)<br />    
+<input type="text" name="amount_figures" required/>(in figures)</td>
+  </tr>
+  
+  <tr>
+    <td> <b>Payment enclosed</b><font color="#ff0000">*</font>: </td>    
+    <td>
+      <input name="bank_draft_money_order" type="radio" value="Bank Draft" id="bank_draft" style="padding: 0px !important; width: 20px !important;" required/>
+Bank Draft, &nbsp;&nbsp; &nbsp;&nbsp;
+<input name="bank_draft_money_order" type="radio" value="International Money Order" id="money_order" style="padding: 0px !important; width: 20px !important;"/>
+International Money Order:</b> </td>  
+  </tr>
+  
+  <tr>
+    <td><b>Demand Draft No.</b><font color="#ff0000">*</font></td>   
+    <td><input type="text" name="dd_no" required/></td>
+  </tr>
+  
+  <tr>
+  <td>
+    <b>Dated</b><font color="#ff0000">*</font> </td>    
+    <td><input type="date" name="dd_date" required/>
+	</td>
+  </tr>
+  
+    <tr>
+	<td> <b>Drawn in (Name of the Bank) of</b><font color="#ff0000">*</font>
+	</td>      
+    <td><input type="text" name="dd_bank" required/></td>
+    </tr>
+	
+	</tr>
+  <tr>
+    <td><b>Demand Draft No.</b><font color="#ff0000">*</font></td>
+   
+    <td><input type="text" name="dd_no" required/></td>
+  </tr>
+  <tr><td>
+    <b>Dated</b><font color="#ff0000">*</font> </td>
+    
+    <td><input type="date" name="dd_date" required/></td></tr>
+    <tr><td><b> Drawn in (Name of the Bank) of</b><font color="#ff0000">*</font> </td>
+      
+    <td><input type="text" name="dd_bank" required/></td>
+  </tr>
+  <tr >
+<td align="right" style="padding-right:50px;">
+<img src="http://www.krepublishers.com/capcha/captcha_code_file.php?rand=%3C?php%20echo%20rand();%20?rand=139.27590520277988"  id="captchaimg">
+</td>
+<td align="left">
+								<label for='message'><b>Enter the code above here :</b></label><br>
+								<input id="6_letters_code" name="6_letters_code" type="text" required><br>
+								<small><b>Can't read the image? click <a href='javascript: refreshCaptcha();'><b>here</b></a> <b>to refresh</b></small></td>
+</tr>
+    
+	</table>
+	<div style="margin-top:20px;margin-left:100px;">
+	<button type="button" class="btn btn-danger " >Submit</button>
+<button type="button" class="btn btn-danger">Clear All</button>	
+	</div>
+	
+	<div style="margin-left:100px;">
+<h3> <u><em style="color:red;"> IMPORTANT </em> </u></h3>
+ All prices are current and are subject to change without notice.<br />
+<br />
+ Please tick the appropriate <input name="" type="checkbox" value="" style="padding: 0px !important; width: 20px !important;"  />  and delete what you do not require.<br />
+<br />
+ 
+Please let us have full billing instructions, e.g. number of invoice copies and whether pre-receipted or not.<br />
+</div>
+	
+	</form>
+	
+	</div>
 </div>
 
 <!-- End of about the journal -->
 
 <!-- Button -->
 
-<div class="container jumbotron" style="margin-top:50px;">
+<div class="container jumbotron" style="margin-top:100px;">
    <div class="row">	  	    
 		  <div class="col-sm-6 col-md-6 col-lg-6">
-		    <button class="btn-lg btn-primary">INFORMATION</button>
+		    <button class="btn-lg btn-primary" >INFORMATION</button>
 		  </div>
 		  <div class="col-sm-6 col-md-6 col-lg-6">
 		    <button class="btn-lg btn-primary">ORDER FORM</button>
